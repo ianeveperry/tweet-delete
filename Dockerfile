@@ -1,6 +1,6 @@
 FROM python:3-alpine
 
-RUN apk add --no-cache --update build-base libffi-dev openssl-dev
+RUN apk add --no-cache --update build-base libffi-dev openssl-dev rust cargo
 
 WORKDIR /app
 COPY pyproject.toml /app/pyproject.toml
